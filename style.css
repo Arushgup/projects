@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #020024 0%, #690956 35%, #00d4ff 100%); /* Adjusted gradient direction and colors */
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: #00d4ff; /* Aqua replaced with a color from the background gradient */
+    font-size: 3rem; /* Increased font size for a bolder heading */
+  }
+  
+  .stopwatch {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: orange; /* Removed gradient for better contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+  }
+  
+  .display {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.463);
+    color: #333; /* Added text color for better contrast */
+    transition: background-color 0.2s ease-in-out; /* Added smooth transition effect */
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  #stopBtn, #resetBtn {
+    opacity: 0.5;
+  }
+  
+  #stopBtn.enabled, #resetBtn.enabled {
+    opacity: 1;
+  }
+  
